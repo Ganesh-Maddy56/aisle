@@ -86,14 +86,27 @@ def generate_receipt(items):
 	return receipt_lines
 
 def main():
+	# Sample input 1
 	input1 = ["1 book at 12.49","1 music CD at 14.99", "1 chocolate bar at 0.85"]
+	items = parse_input(input1)
+	receipt = generate_receipt(items)
+	print(f"\nReceipt 1 \n")
+	for item in receipt:
+		print(item)
+	
+	# Sample input 2
 	input2 = ["1 imported box of chocolates at 10.00","1 imported bottle of perfume at 47.50"]
+	items = parse_input(input2)
+	receipt = generate_receipt(items)
+	print(f"\nReceipt 2 \n")
+	for item in receipt:
+		print(item)
+	
+	# Sample input 3
 	input3 = ["1 imported bottle of perfume at 27.99", "1 bottle of perfume at 18.99", "1 packet of headache pills at 9.75", "1 box of imported chocolates at 11.25"]
-
 	items = parse_input(input3)
 	receipt = generate_receipt(items)
-	print(f"Receipt\n")
-	
+	print(f"\nReceipt 3 \n")
 	for item in receipt:
 		print(item)
 
