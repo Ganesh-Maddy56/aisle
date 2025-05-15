@@ -1,11 +1,18 @@
 # aisle
 
-Clone the Repo 
+Clone the Repo
 
 To run problem 1:
-  cd tax_Calculator
-  python3 receipt_generater.py
 
-To run problem 1:
-  cd game_of_life
-  python3 game_of_life.py
+```bash
+cd tax_Calculator
+python3 receipt_generater.py
+```
+
+
+To run problem 2:
+
+```bash
+cd game_of_life
+python3 game_of_life.py
+```
